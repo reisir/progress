@@ -1,4 +1,4 @@
-[WebNowPlaying]
+[MeasurePlaying]
 Measure=Plugin
 Plugin=WebNowPlaying
 PlayerType=STATE
