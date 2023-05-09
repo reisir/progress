@@ -1,20 +1,12 @@
-; Optimal AudioLevel setup
-; Thanks to @kodikuu for the math
+; https://gist.github.com/reisir/80393374a04e4a2725788d107d4e69b0
 
 [Variables]
-; How many bands to generate
-Bands=50
-; How many frames of data to keep (an integer higher than 0)
-; Higher accuracy also means higher latency
 Accuracy=5
-; How many bands to skip, it's recommended to skip the first band because of AudioLevel inaccuracies
-SkipBands=1
 FreqMin=20
-FreqMax=20000
+FreqMax=16000
 Sensitivity=35
-FFTAttack=0
-FFTDecay=0
-; Assuming Update=16
+PeakAttack=(Floor(250 * [MeasureUpdates] / 8))
+PeakDecay=2500
 FPS=60
 
 ; Get the current audio devices sampling rate
@@ -32,8 +24,14 @@ Plugin=AudioLevel
 DynamicVariables=1
 FFTSize=([MeasureSamplingRate] * #Accuracy# / #FPS#)
 FFTOverlap=([MeasureSamplingRate] * (#Accuracy# - 1) / #FPS#)
-FFTAttack=#FFTAttack#
-FFTDecay=#FFTDecay#
-Bands=(#Bands# + #SkipBands#)
+PeakAttack=#PeakAttack#
+PeakDecay=#PeakDecay#
 FreqMin=#FreqMin#
 FreqMax=#FreqMax#
+Sensitivity=#Sensitivity#
+
+[MeasurePeak]
+Measure=Plugin
+Plugin=AudioLevel
+Parent=MeasureAudio
+Type=Peak

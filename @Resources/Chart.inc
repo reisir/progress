@@ -1,6 +1,6 @@
 [VolumeGraph]
 Meter=Histogram
-MeasureName=MeasureAudio
+MeasureName=MeasurePeak
 Y=#visStartY#
 X=(#visStartX# + #Tick# - #w#)
 W=#w#
