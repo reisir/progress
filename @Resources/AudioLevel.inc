@@ -37,15 +37,3 @@ FFTDecay=#FFTDecay#
 Bands=(#Bands# + #SkipBands#)
 FreqMin=#FreqMin#
 FreqMax=#FreqMax#
-
-; An example Factory.lua generator setup
-[MeasureBandFactory]
-Measure=Script
-ScriptFile=#@#Factory.lua
-IncFile=#@#Chart.inc
-Number=100
-SectionName=%%
-Option0=Meter
-Value0=Shape
-Option1=MeterStyle
-Value1=ChartBar
