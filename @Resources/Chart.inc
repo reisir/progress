@@ -10,6 +10,7 @@ DynamicVariables=1
 GraphStart=Right
 AntiAlias=1
 UpdateDivider=-1
+Container=VisContainer
 
 [MeasureUpdates]
 Measure=Calc
