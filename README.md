@@ -6,7 +6,18 @@ Rainmeter player skin
 
 # Requirements
 
+- [Rainmeter](https://rainmeter.net)
 - [WebNowPlaying-Redux](https://github.com/keifufu/WebNowPlaying-Redux#installing) browser extension
+
+# Installation
+
+Automatic install with [Meters on Demand](https://github.com/meters-on-demand/cli#meters-on-demand)
+
+```
+mond install reisir/progress
+```
+
+Manual install: Download the [latest release](https://github.com/reisir/progress/releases/latest)
 
 # TODO
 
