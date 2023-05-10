@@ -6,11 +6,12 @@ Measure=Plugin
 Plugin=WebNowPlaying
 PlayerType=STATE
 OnChangeAction=[!UpdateMeterGroup Controls][!Redraw]
-IfCondition=[#CURRENTSECTION#] = 0 
+IfCondition=[#CURRENTSECTION#:] = 0 
 IfTrueAction=[!Delay 30][!Hide]
-IfCondition2=[#CURRENTSECTION#] = 1
+IfCondition2=[#CURRENTSECTION#:] = 1
 IfTrueAction2=[!Show]
 DynamicVariables=1
+Substitute="0":"Stopped - ","1":"","2":"Paused - "
 
 [MeasurePlayer]
 Measure=Plugin

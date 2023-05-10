@@ -30,5 +30,5 @@ Measure=Calc
 ; Formula=(Counter % (MeasureDuration / (#w# / (1000 / 32))))
 Formula=(Counter % MeasureUpdates)
 IfEqualValue=0
-IfEqualAction=[!UpdateMeter "VolumeGraph[&MeasurePlaying]"][!SetVariable Tick "([&MeasurePlaying] = 1 ? [#Tick] + 1 : [#Tick])"][!Redraw]
+IfEqualAction=[!UpdateMeter "VolumeGraph[&MeasurePlaying:]"][!SetVariable Tick "([&MeasurePlaying:] = 1 ? [#Tick] + 1 : [#Tick])"][!Redraw]
 DynamicVariables=1

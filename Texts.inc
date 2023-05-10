@@ -1,8 +1,9 @@
 
 [WindowTitle]
 Meter=String
-MeasureName=MeasureProgress
-Text=%1% complete
+MeasureName=MeasurePlaying
+MeasureName2=MeasureProgress
+Text=%1%2% complete
 MeterStyle=StringDefaults
 FontColor=999999
 X=R

@@ -13,7 +13,7 @@ Shape=Rectangle -6,-8,17,16 | Fill Color [#[#CURRENTSECTION]BackgroundColor] | S
 Shape2=Line 0,0,1,0 | StrokeEndCap Triangle | StrokeWidth 9
 X=363
 Y=72
-Hidden=([MeasurePlaying] <> 2 ? 1 : 0)
+Hidden=([MeasurePlaying:] <> 2 ? 1 : 0)
 
 [Pause]
 Meter=Shape
@@ -23,7 +23,7 @@ Shape2=Rectangle -1, -4, 2, 8 | StrokeWidth 0 | Fill Color 000000
 Shape3=Rectangle 4, -4, 2, 8 | StrokeWidth 0 | Fill Color 000000
 X=r
 Y=r
-Hidden=([MeasurePlaying] = 2 ? 1 : 0)
+Hidden=([MeasurePlaying:] = 2 ? 1 : 0)
 
 [Stop]
 Meter=Shape
