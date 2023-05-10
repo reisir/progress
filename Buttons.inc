@@ -1,3 +1,11 @@
+[Buttons]
+Meter=Image
+ImageName=#@#buttons.png
+X=(#TotalWidth# - 18 - [#CURRENTSECTION#:W])
+Y=(10)
+UpdateDivider=-1
+DynamicVariables=1
+
 [Controls]
 DynamicVariables=1
 Group=Controls
@@ -34,3 +42,16 @@ Shape3=Line 8,0,0,8 | StrokeWidth 1.5
 X=(363 + 46)
 Y=(72 - 4)
 LeftMouseUpAction=[!CommandMeasure MediaKey "Stop"][!CommandMeasure MeasurePlaying "PlayPause"][!Delay 30][!Hide]
+
+[Close]
+Meter=Image
+W=46
+H=28
+X=(#TotalWidth# - ([#CURRENTSECTION#:W]))
+Y=#OutlineWidth#
+SolidColor=00000001
+DynamicVariables=1
+MouseOverAction=[!SetOption #CURRENTSECTION# SolidColor ff0000aa][!UpdateMeter #CURRENTSECTION#][!Redraw]
+MouseLeaveAction=[!SetOption #CURRENTSECTION# SolidColor 00000001][!UpdateMeter #CURRENTSECTION#][!Redraw]
+LeftMouseUpAction=[!Hide]
+UpdateDivider=-1
