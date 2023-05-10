@@ -81,14 +81,14 @@ DynamicVariables=1
 Meter=Shape
 Shape=Rectangle #visStartX#, (#visStartY# + #visHeightDetails#), #visWidth#, 1 | StrokeWidth 0 | Fill Color 0, 0, 0
 DynamicVariables=1
-Y=(-[#visHeightDetails] * [MeasurePeak])
+Y=(-[#visHeightDetails] * [MeasurePeak:%] / 100)
 UpdateDivider=(Floor([MeasureUpdates] / 3))
 MeterStyle=Details
 
 [MeasureSpeed]
 Measure=Calc
 ; Formula=1000 / (MeasureUpdates * 16)
-Formula=Log(MeasurePeak) * 45
+Formula=Log([MeasurePeak:%] / 100) * 45
 DynamicVariables=1
 UpdateDivider=34
 RegExpSubstitute=1

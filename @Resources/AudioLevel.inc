@@ -35,3 +35,5 @@ Measure=Plugin
 Plugin=AudioLevel
 Parent=MeasureAudio
 Type=Peak
+MaxValue=(([MeasureVolume] / 100) > 0.01 ? ([MeasureVolume] / 100) : 1)
+DynamicVariables=1

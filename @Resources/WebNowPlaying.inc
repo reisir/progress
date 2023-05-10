@@ -18,6 +18,11 @@ Measure=Plugin
 Plugin=WebNowPlaying
 PlayerType=PLAYER
 
+[MeasureVolume]
+Measure=Plugin
+Plugin=WebNowPlaying
+PlayerType=VOLUME
+
 [MeasureProgress]
 Measure=Plugin
 Plugin=WebNowPlaying
