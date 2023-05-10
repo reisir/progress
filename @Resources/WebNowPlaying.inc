@@ -1,7 +1,16 @@
+[MediaKey]
+Measure=MediaKey
+
 [MeasurePlaying]
 Measure=Plugin
 Plugin=WebNowPlaying
 PlayerType=STATE
+OnChangeAction=[!UpdateMeterGroup Controls][!Redraw]
+IfCondition=[#CURRENTSECTION#] = 0 
+IfTrueAction=[!Delay 30][!Hide]
+IfCondition2=[#CURRENTSECTION#] = 1
+IfTrueAction2=[!Show]
+DynamicVariables=1
 
 [MeasurePlayer]
 Measure=Plugin
