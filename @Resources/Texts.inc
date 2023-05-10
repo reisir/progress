@@ -42,7 +42,7 @@ Meter=String
 MeterStyle=StringDefaults | Details
 Text=Artist: _[MeasureArtist:EncodeURL]
 X=r
-Y=(#visStartY# + [#visHeight[#Details]] + 16)
+Y=(#visStartY# + [#visHeight[#Details]] + 12)
 
 [MeterRemaining]
 Meter=String

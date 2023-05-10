@@ -7,6 +7,6 @@ UpdateDivider=-1
 
 [NoDetailsProgress]
 Meter=Shape
-Shape=Rectangle #visStartX#, #visStartY#, (#visWidth# * [MeasureProgress] / 100), #visHeightNoDetails# | StrokeWidth 0 | Fill Color 74E2589a
+Shape=Rectangle #visStartX#, #visStartY#, (#visWidth# * [MeasureProgress] / 100), #visHeightNoDetails# | StrokeWidth 0 | Fill Color 74E258
 DynamicVariables=1
 MeterStyle=NoDetails
