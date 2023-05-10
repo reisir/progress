@@ -33,4 +33,4 @@ Shape2=Line 0,0,8,8 | StrokeWidth 1.5
 Shape3=Line 8,0,0,8 | StrokeWidth 1.5
 X=(363 + 46)
 Y=(72 - 4)
-LeftMouseUpAction=[!CommandMeasure MeasurePlaying "PlayPause"][!CommandMeasure MediaKey "Stop"][!CommandMeasure MeasurePlaying "PlayPause"][!Delay 30][!Hide]
+LeftMouseUpAction=[!CommandMeasure MediaKey "Stop"][!CommandMeasure MeasurePlaying "PlayPause"][!Delay 30][!Hide]

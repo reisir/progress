@@ -7,3 +7,8 @@ Rainmeter player skin
 # Requirements
 
 - [WebNowPlaying-Redux](https://github.com/keifufu/WebNowPlaying-Redux#installing) browser extension
+
+# TODO
+
+- Add "Properties" window 
+    - Access by clicking title or right click > properties

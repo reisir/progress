@@ -12,6 +12,10 @@ visStartX=(Floor((#Width# - #w#) / 2))
 visStartY=94
 visHeight=76
 
+GridColor0=efeacc
+GridColor1=cdefd3
+GridColor2=efeacc
+
 ControlBackgroundColor=87C4F257
 ControlBackgroundStrokeColor=70c0e7
 PlayBackgroundColor=00000001
