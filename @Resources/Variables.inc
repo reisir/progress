@@ -47,4 +47,6 @@ PlayBackgroundStrokeColor=00000001
 StopBackgroundColor=00000001
 StopBackgroundStrokeColor=00000001
 
-ToggleColor=00000087
+ToggleOnHover=000000ff
+ToggleOnLeave=00000088
+ToggleColor=#ToggleOnLeave#

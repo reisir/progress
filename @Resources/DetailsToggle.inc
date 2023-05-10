@@ -16,6 +16,8 @@ UpdateDivider=-1
 X=r
 Y=r
 LeftMouseUpAction=[!SetVariable Details "(1 - [#Details])"][!WriteKeyValue Variables Details [#Details] "#ROOTCONFIG#.ini"][!UpdateMeterGroup Details][!UpdateMeterGroup NoDetails][!Redraw]
+MouseOverAction=[!SetVariable ToggleColor #ToggleOnHover#][!UpdateMeterGroup Toggle][!Redraw]
+MouseLeaveAction=[!SetVariable ToggleColor #ToggleOnLeave#][!UpdateMeterGroup Toggle][!Redraw]
 
 [ToggleNoDetails]
 Meter=Shape
@@ -27,13 +29,16 @@ X=25
 Y=([Divider:Y] + 12)
 DynamicVariables=1
 MeterStyle=Details
+Group=Details | Toggle
 
 [ToggleNoDetailsLabel]
 Meter=String
 MeterStyle=StringDefaults | Details
+FontColor=#ToggleColor#
 Text=Fewer details
 X=6R
 Y=2r
+Group=Details | Toggle
 
 [ToggleDetails]
 Meter=Shape
@@ -45,11 +50,14 @@ X=25
 Y=([Divider:Y] + 12)
 DynamicVariables=1
 MeterStyle=NoDetails
+Group=NoDetails | Toggle
 
 [ToggleDetailsLabel]
 Meter=String
 MeterStyle=StringDefaults | NoDetails
+FontColor=#ToggleColor#
 Text=More details
 X=6R
 Y=2r
+Group=NoDetails | Toggle
 
