@@ -7,7 +7,7 @@ Plugin=WebNowPlaying
 PlayerType=STATE
 OnChangeAction=[!UpdateMeterGroup Controls][!Redraw]
 IfCondition=[#CURRENTSECTION#:] = 0 
-IfTrueAction=[!Delay 30][!Hide]
+IfTrueAction=[!Hide]
 IfCondition2=[#CURRENTSECTION#:] = 1
 IfTrueAction2=[!Show]
 DynamicVariables=1
@@ -54,7 +54,7 @@ Measure=Plugin
 Plugin=WebNowPlaying
 PlayerType=TITLE
 Substitute="":"N/A"
-OnChangeAction=[!UpdateMeter MeterTitle][!Redraw]
+OnChangeAction=[!Refresh]
 
 [MeasureRemaining]
 Measure=Plugin
