@@ -26,6 +26,7 @@ ClipString=1
 X=(#visStartX# - 4)
 Y=41
 InlinePattern="Playing(.*)from"
+DynamicVariables=1
 InlineSetting=Color | 0066CCff
 
 [MeterProgress]
@@ -42,6 +43,7 @@ Meter=String
 MeterStyle=StringDefaults | Details
 Text=Artist: _[MeasureArtist:EncodeURL]
 X=r
+DynamicVariables=1
 Y=(#visStartY# + [#visHeight[#Details]] + 12)
 
 [MeterRemaining]

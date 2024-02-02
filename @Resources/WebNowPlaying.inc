@@ -47,13 +47,14 @@ Measure=Plugin
 Plugin=WebNowPlaying
 PlayerType=ARTIST
 Substitute="":"N/A"
+OnChangeAction=[!UpdateMeter MeterArtist][!Redraw]
 
 [MeasureTitle]
 Measure=Plugin
 Plugin=WebNowPlaying
 PlayerType=TITLE
 Substitute="":"N/A"
-OnChangeAction=[!Refresh]
+OnChangeAction=[!UpdateMeter MeterTitle][!Redraw]
 
 [MeasureRemaining]
 Measure=Plugin
