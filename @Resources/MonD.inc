@@ -4,4 +4,4 @@ PreviewImage=https://user-images.githubusercontent.com/93496808/236972898-73c97c
 Author=Reisir
 ProfilePicture=https://avatars.githubusercontent.com/u/93496808
 Description=a Rainmeter player skin
-Version=v1.0.1
+Version=v1.0.2
