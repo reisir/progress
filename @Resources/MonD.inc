@@ -4,11 +4,4 @@ PreviewImage=https://user-images.githubusercontent.com/93496808/236972898-73c97c
 Author=Reisir
 ProfilePicture=https://avatars.githubusercontent.com/u/93496808
 Description=a Rainmeter player skin
-
-; Optional measure that writes SkinName automatically
-Measure=String
-UpdateDivider=1
-IfMatch=#ROOTCONFIG#
-IfMatchAction=[!DisableMeasure "MonD"]
-IfNotMatchAction=[!WriteKeyValue "MonD" "String" "[#ROOTCONFIG]" "#@#Mond.inc"][!WriteKeyValue "MonD" "SkinName" "[#ROOTCONFIG]" "#@#Mond.inc"][!Refresh]
-String=Progress
+Version=v1.0.1
